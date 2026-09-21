@@ -88,8 +88,9 @@ from Sports_Teams
 order by win_per DESC;
 
 -- Part 6
--- Do
-
+-- The first concept I noticed is importing data. It makes sense to move it into a sql program to dig through it here or run other actions we haven't done yet.
+-- Another concept I noticed was the split of division. It's interesting you have to use two commands to get the quotient and remainder.
+-- One question I do have is does what is the copy command to copy in the database itself? Can copy be used for that also with import and export.
 
 -- Reflection
 --   Which new data type did you find the most useful?
