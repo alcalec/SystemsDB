@@ -35,3 +35,25 @@ ROUND(AVG(price),2) as avg_price
 from products
 group by category
 order by avg_price DESC;
+
+-- VIEWS
+-- View is a saved SQL Query that acts like a virtual table
+-- It doesn't store new data, query definition
+
+creatE view product_summary AS
+SELECT category
+ROUND(AVG(price),2) as avg_price
+SUM(stock) AS total_stock
+from products
+group by category
+order by avg_price DESC;
+
+-- Views just create a shortuct.
+select * from proDUCt_SUMMARY
+-- TO update
+-- REPLACE VIEW products_summary
+-- AS
+
+-- to delete view, drop VIEW
+DROP VIEW "Name of view" - no quotes
+-- Use views to simplify, avoid retyping, consistency, restrict user access
