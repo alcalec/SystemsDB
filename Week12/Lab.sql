@@ -28,3 +28,18 @@ Values
 ('Late Registration', 'Kanye West', 'Rap', 2005),
 ('Straight From the Heart', 'George Strait', 'Country', 1982),
 ('The College Dropout', 'Kanye West', 'Rap', 2004);
+
+-- View the join
+select
+artists.artist,
+artists.age,
+albums.album_name,
+albums.release_year
+FROM albums
+JOIN artists
+On albums.artist=artists.artist
+
+-- Reflection --
+-- This is a one-to-one relationship
+-- It won't be able to find the department
+-- Foreign Keys keep track of the primary ways to find other data from other tables
